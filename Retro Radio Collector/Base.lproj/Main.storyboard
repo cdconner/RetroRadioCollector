@@ -21,12 +21,12 @@
                         <viewLayoutGuide key="safeArea" id="Mxb-Lp-nuS"/>
                     </view>
                     <connections>
-                        <segue destination="6zw-eb-iyi" kind="show" id="JDi-7u-bwb"/>
+                        <segue destination="6zw-eb-iyi" kind="show" identifier="toMenuScreen" id="JDi-7u-bwb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEc-AM-l8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-511" y="125"/>
+            <point key="canvasLocation" x="-323" y="125"/>
         </scene>
         <!--Login Menu View Controller-->
         <scene sceneID="GsO-Ta-tz6">
@@ -42,7 +42,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
-                                    <segue destination="B0t-uo-8fD" kind="show" id="3lc-or-ZGe"/>
+                                    <segue destination="B0t-uo-8fD" kind="show" identifier="toLoginView" id="3lc-or-ZGe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K29-7Y-Rdv">
@@ -51,7 +51,7 @@
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
-                                    <segue destination="52y-vx-dZq" kind="show" id="jqF-1G-mOS"/>
+                                    <segue destination="52y-vx-dZq" kind="show" identifier="toSignUpView" id="jqF-1G-mOS"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose An Option" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFa-hW-MBq">
@@ -66,12 +66,12 @@
                         <viewLayoutGuide key="safeArea" id="g1l-pd-R6Q"/>
                     </view>
                     <connections>
-                        <segue destination="Mzj-4A-rPd" kind="show" id="fJP-Zu-Vci"/>
+                        <segue destination="Mzj-4A-rPd" kind="show" identifier="toHomeScreen" id="fJP-Zu-Vci"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bk-QH-FJY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="296.80000000000001" y="124.58770614692655"/>
+            <point key="canvasLocation" x="378" y="124"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="jAE-mu-fcY">
@@ -102,7 +102,7 @@
                     <navigationItem key="navigationItem" id="mzE-9D-xz9"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="3065" y="125"/>
+            <point key="canvasLocation" x="2454" y="125"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="6AC-uS-Qs6">
@@ -135,7 +135,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SbY-MB-NpI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2134" y="125"/>
+            <point key="canvasLocation" x="1790" y="124"/>
         </scene>
     </scenes>
 </document>

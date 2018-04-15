@@ -210,8 +210,9 @@ SWIFT_CLASS("_TtC21Retro_Radio_Collector24HomeScreenViewController")
 
 SWIFT_CLASS("_TtC21Retro_Radio_Collector21InitialViewController")
 @interface InitialViewController : UIViewController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
+@property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

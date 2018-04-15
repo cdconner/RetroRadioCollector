@@ -17,9 +17,13 @@
 		A58C6B2D2083F5900056528B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58C6B2C2083F5900056528B /* LoginViewController.swift */; };
 		A58C6B2F2083F59C0056528B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58C6B2E2083F59C0056528B /* SignUpViewController.swift */; };
 		A58C6B312083F5FB0056528B /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58C6B302083F5FB0056528B /* HomeScreenViewController.swift */; };
+		A58C6B33208419E10056528B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A58C6B32208419E10056528B /* GoogleService-Info.plist */; };
+		C2A8D1FCE13EC15C4DAF14C6 /* Pods_Retro_Radio_Collector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE79EC929360E7D8C687EE37 /* Pods_Retro_Radio_Collector.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F7BEDE0ACC0450AC9AA157B /* Pods-Retro Radio Collector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Retro Radio Collector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Retro Radio Collector/Pods-Retro Radio Collector.debug.xcconfig"; sourceTree = "<group>"; };
+		73AB0D7D3EEAEB0F7107D5B4 /* Pods-Retro Radio Collector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Retro Radio Collector.release.xcconfig"; path = "Pods/Target Support Files/Pods-Retro Radio Collector/Pods-Retro Radio Collector.release.xcconfig"; sourceTree = "<group>"; };
 		A58C6B132083EEBF0056528B /* Retro Radio Collector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Retro Radio Collector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A58C6B162083EEC00056528B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A58C6B182083EEC00056528B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +36,8 @@
 		A58C6B2C2083F5900056528B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A58C6B2E2083F59C0056528B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A58C6B302083F5FB0056528B /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		A58C6B32208419E10056528B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BE79EC929360E7D8C687EE37 /* Pods_Retro_Radio_Collector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Retro_Radio_Collector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A8D1FCE13EC15C4DAF14C6 /* Pods_Retro_Radio_Collector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AAE0ACE5CA85DBCA5632856 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE79EC929360E7D8C687EE37 /* Pods_Retro_Radio_Collector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A58C6B0A2083EEBF0056528B = {
 			isa = PBXGroup;
 			children = (
 				A58C6B152083EEBF0056528B /* Retro Radio Collector */,
 				A58C6B142083EEBF0056528B /* Products */,
+				D0DF8083EC866ED76A930DD3 /* Pods */,
+				6AAE0ACE5CA85DBCA5632856 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,17 +83,27 @@
 			children = (
 				A58C6B162083EEC00056528B /* AppDelegate.swift */,
 				A58C6B182083EEC00056528B /* ViewController.swift */,
-				A58C6B1A2083EEC00056528B /* Main.storyboard */,
 				A58C6B302083F5FB0056528B /* HomeScreenViewController.swift */,
 				A58C6B282083F5690056528B /* InitialViewController.swift */,
 				A58C6B2A2083F5800056528B /* LoginMenuViewController.swift */,
 				A58C6B2C2083F5900056528B /* LoginViewController.swift */,
 				A58C6B2E2083F59C0056528B /* SignUpViewController.swift */,
+				A58C6B1A2083EEC00056528B /* Main.storyboard */,
 				A58C6B1D2083EEC30056528B /* Assets.xcassets */,
 				A58C6B1F2083EEC30056528B /* LaunchScreen.storyboard */,
 				A58C6B222083EEC30056528B /* Info.plist */,
+				A58C6B32208419E10056528B /* GoogleService-Info.plist */,
 			);
 			path = "Retro Radio Collector";
+			sourceTree = "<group>";
+		};
+		D0DF8083EC866ED76A930DD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F7BEDE0ACC0450AC9AA157B /* Pods-Retro Radio Collector.debug.xcconfig */,
+				73AB0D7D3EEAEB0F7107D5B4 /* Pods-Retro Radio Collector.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A58C6B252083EEC30056528B /* Build configuration list for PBXNativeTarget "Retro Radio Collector" */;
 			buildPhases = (
+				2C9D486272E554044B9E6C4E /* [CP] Check Pods Manifest.lock */,
 				A58C6B0F2083EEBF0056528B /* Sources */,
 				A58C6B102083EEBF0056528B /* Frameworks */,
 				A58C6B112083EEBF0056528B /* Resources */,
+				A4343D0E6F4803E5514491F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,12 +167,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				A58C6B212083EEC30056528B /* LaunchScreen.storyboard in Resources */,
+				A58C6B33208419E10056528B /* GoogleService-Info.plist in Resources */,
 				A58C6B1E2083EEC30056528B /* Assets.xcassets in Resources */,
 				A58C6B1C2083EEC00056528B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C9D486272E554044B9E6C4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Retro Radio Collector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4343D0E6F4803E5514491F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Retro Radio Collector/Pods-Retro Radio Collector-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Retro Radio Collector/Pods-Retro Radio Collector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A58C6B0F2083EEBF0056528B /* Sources */ = {
@@ -298,15 +369,13 @@
 		};
 		A58C6B262083EEC30056528B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F7BEDE0ACC0450AC9AA157B /* Pods-Retro Radio Collector.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BJT8QVT53Y;
 				INFOPLIST_FILE = "Retro Radio Collector/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.chrisconner.Retro-Radio-Collector";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -316,15 +385,13 @@
 		};
 		A58C6B272083EEC30056528B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73AB0D7D3EEAEB0F7107D5B4 /* Pods-Retro Radio Collector.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BJT8QVT53Y;
 				INFOPLIST_FILE = "Retro Radio Collector/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.chrisconner.Retro-Radio-Collector";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

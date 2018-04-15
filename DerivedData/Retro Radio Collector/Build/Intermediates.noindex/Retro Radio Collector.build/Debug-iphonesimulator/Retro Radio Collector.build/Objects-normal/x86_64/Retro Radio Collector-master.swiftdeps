@@ -1,11 +1,11 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
-options: "18a3b5f1906ba5f0e9d80326e321b403"
-build_time: [1523826300, 357746000]
+options: "26c78da1c3a6c5a2d5c3e64b79a66ec1"
+build_time: [1523835680, 580199000]
 inputs:
   "/Users/chrisconner/Desktop/Retro Radio Collector/Retro Radio Collector/SignUpViewController.swift": [1523826204, 0]
-  "/Users/chrisconner/Desktop/Retro Radio Collector/Retro Radio Collector/InitialViewController.swift": [1523826153, 0]
+  "/Users/chrisconner/Desktop/Retro Radio Collector/Retro Radio Collector/InitialViewController.swift": [1523834883, 0]
   "/Users/chrisconner/Desktop/Retro Radio Collector/Retro Radio Collector/LoginMenuViewController.swift": [1523826175, 0]
   "/Users/chrisconner/Desktop/Retro Radio Collector/Retro Radio Collector/ViewController.swift": [1523824448, 0]
   "/Users/chrisconner/Desktop/Retro Radio Collector/Retro Radio Collector/LoginViewController.swift": [1523826191, 0]
   "/Users/chrisconner/Desktop/Retro Radio Collector/Retro Radio Collector/AppDelegate.swift": [1523824448, 0]
-  "/Users/chrisconner/Desktop/Retro Radio Collector/Retro Radio Collector/HomeScreenViewController.swift": [9223372036, 854775807]
+  "/Users/chrisconner/Desktop/Retro Radio Collector/Retro Radio Collector/HomeScreenViewController.swift": [1523826298, 0]
