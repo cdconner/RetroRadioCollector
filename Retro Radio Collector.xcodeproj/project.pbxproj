@@ -12,6 +12,11 @@
 		A58C6B1C2083EEC00056528B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A58C6B1A2083EEC00056528B /* Main.storyboard */; };
 		A58C6B1E2083EEC30056528B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A58C6B1D2083EEC30056528B /* Assets.xcassets */; };
 		A58C6B212083EEC30056528B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A58C6B1F2083EEC30056528B /* LaunchScreen.storyboard */; };
+		A58C6B292083F5690056528B /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58C6B282083F5690056528B /* InitialViewController.swift */; };
+		A58C6B2B2083F5800056528B /* LoginMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58C6B2A2083F5800056528B /* LoginMenuViewController.swift */; };
+		A58C6B2D2083F5900056528B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58C6B2C2083F5900056528B /* LoginViewController.swift */; };
+		A58C6B2F2083F59C0056528B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58C6B2E2083F59C0056528B /* SignUpViewController.swift */; };
+		A58C6B312083F5FB0056528B /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58C6B302083F5FB0056528B /* HomeScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		A58C6B1D2083EEC30056528B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A58C6B202083EEC30056528B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A58C6B222083EEC30056528B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A58C6B282083F5690056528B /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		A58C6B2A2083F5800056528B /* LoginMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMenuViewController.swift; sourceTree = "<group>"; };
+		A58C6B2C2083F5900056528B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A58C6B2E2083F59C0056528B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A58C6B302083F5FB0056528B /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,11 @@
 				A58C6B162083EEC00056528B /* AppDelegate.swift */,
 				A58C6B182083EEC00056528B /* ViewController.swift */,
 				A58C6B1A2083EEC00056528B /* Main.storyboard */,
+				A58C6B302083F5FB0056528B /* HomeScreenViewController.swift */,
+				A58C6B282083F5690056528B /* InitialViewController.swift */,
+				A58C6B2A2083F5800056528B /* LoginMenuViewController.swift */,
+				A58C6B2C2083F5900056528B /* LoginViewController.swift */,
+				A58C6B2E2083F59C0056528B /* SignUpViewController.swift */,
 				A58C6B1D2083EEC30056528B /* Assets.xcassets */,
 				A58C6B1F2083EEC30056528B /* LaunchScreen.storyboard */,
 				A58C6B222083EEC30056528B /* Info.plist */,
@@ -135,8 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A58C6B2F2083F59C0056528B /* SignUpViewController.swift in Sources */,
+				A58C6B292083F5690056528B /* InitialViewController.swift in Sources */,
+				A58C6B2B2083F5800056528B /* LoginMenuViewController.swift in Sources */,
 				A58C6B192083EEC00056528B /* ViewController.swift in Sources */,
+				A58C6B2D2083F5900056528B /* LoginViewController.swift in Sources */,
 				A58C6B172083EEC00056528B /* AppDelegate.swift in Sources */,
+				A58C6B312083F5FB0056528B /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
