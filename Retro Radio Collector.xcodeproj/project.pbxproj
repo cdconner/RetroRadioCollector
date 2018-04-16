@@ -18,6 +18,7 @@
 		A58C6B2F2083F59C0056528B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58C6B2E2083F59C0056528B /* SignUpViewController.swift */; };
 		A58C6B312083F5FB0056528B /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58C6B302083F5FB0056528B /* HomeScreenViewController.swift */; };
 		A58C6B33208419E10056528B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A58C6B32208419E10056528B /* GoogleService-Info.plist */; };
+		A58C6B3520841E5D0056528B /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58C6B3420841E5D0056528B /* RoundedWhiteButton.swift */; };
 		C2A8D1FCE13EC15C4DAF14C6 /* Pods_Retro_Radio_Collector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE79EC929360E7D8C687EE37 /* Pods_Retro_Radio_Collector.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		A58C6B2E2083F59C0056528B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A58C6B302083F5FB0056528B /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		A58C6B32208419E10056528B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A58C6B3420841E5D0056528B /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
 		BE79EC929360E7D8C687EE37 /* Pods_Retro_Radio_Collector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Retro_Radio_Collector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 				A58C6B282083F5690056528B /* InitialViewController.swift */,
 				A58C6B2A2083F5800056528B /* LoginMenuViewController.swift */,
 				A58C6B2C2083F5900056528B /* LoginViewController.swift */,
+				A58C6B3420841E5D0056528B /* RoundedWhiteButton.swift */,
 				A58C6B2E2083F59C0056528B /* SignUpViewController.swift */,
 				A58C6B1A2083EEC00056528B /* Main.storyboard */,
 				A58C6B1D2083EEC30056528B /* Assets.xcassets */,
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A58C6B2F2083F59C0056528B /* SignUpViewController.swift in Sources */,
+				A58C6B3520841E5D0056528B /* RoundedWhiteButton.swift in Sources */,
 				A58C6B292083F5690056528B /* InitialViewController.swift in Sources */,
 				A58C6B2B2083F5800056528B /* LoginMenuViewController.swift in Sources */,
 				A58C6B192083EEC00056528B /* ViewController.swift in Sources */,
@@ -375,7 +379,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BJT8QVT53Y;
 				INFOPLIST_FILE = "Retro Radio Collector/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "co.chrisconner.Retro-Radio-Collector";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -391,7 +398,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BJT8QVT53Y;
 				INFOPLIST_FILE = "Retro Radio Collector/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "co.chrisconner.Retro-Radio-Collector";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
