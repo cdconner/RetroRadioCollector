@@ -12,7 +12,7 @@ import UIKit
 
 class RoundedWhiteButton:UIButton {
     
-    var highlightedColor = UIColor.white
+    var highlightedColor = UIColor.cyan
     {
         didSet {
             if isHighlighted {
@@ -57,7 +57,7 @@ class RoundedWhiteButton:UIButton {
     }
     
     func setup() {
-        self.layer.borderColor = UIColor.white.cgColor
+        self.layer.borderColor = UIColor.cyan.cgColor
         self.layer.borderWidth = 2.0
         self.layer.cornerRadius = self.frame.height / 2
         self.clipsToBounds = true

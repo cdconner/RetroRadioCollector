@@ -22,13 +22,14 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = UIColor.gray
         
         continueButton = RoundedWhiteButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
         continueButton.setTitle("Continue", for: .normal)
         continueButton.titleLabel?.font = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
         continueButton.center = CGPoint(x: view.center.x, y: view.frame.height - continueButton.frame.height - 24)
         continueButton.highlightedColor = UIColor(white: 1.0, alpha: 1.0)
-        continueButton.defaultColor = UIColor.white
+        continueButton.defaultColor = UIColor.cyan
         continueButton.addTarget(self, action: #selector(handleSignIn), for: .touchUpInside)
         continueButton.alpha = 0.5
         view.addSubview(continueButton)
@@ -69,7 +70,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func handleDismissButton(_ sender: Any) {
-        self.dismiss(animated: false, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     /**

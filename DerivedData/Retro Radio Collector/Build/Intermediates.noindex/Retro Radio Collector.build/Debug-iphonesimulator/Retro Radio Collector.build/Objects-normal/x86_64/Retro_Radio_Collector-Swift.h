@@ -164,6 +164,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -202,7 +203,7 @@ SWIFT_CLASS("_TtC21Retro_Radio_Collector11AppDelegate")
 SWIFT_CLASS("_TtC21Retro_Radio_Collector24HomeScreenViewController")
 @interface HomeScreenViewController : UIViewController
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (IBAction)handleLogout:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -217,29 +218,79 @@ SWIFT_CLASS("_TtC21Retro_Radio_Collector21InitialViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
 
 SWIFT_CLASS("_TtC21Retro_Radio_Collector23LoginMenuViewController")
 @interface LoginMenuViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loginButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified signupButton;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
+@property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITextField;
+@class NSNotification;
+
+SWIFT_CLASS("_TtC21Retro_Radio_Collector19LoginViewController")
+@interface LoginViewController : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified dismissButton;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+@property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
+- (IBAction)handleDismissButton:(id _Nonnull)sender;
+/// Adjusts the center of the <em>continueButton</em> above the keyboard.
+/// \param notification Contains the keyboardFrame info.
+///
+- (void)keyboardWillAppearWithNotification:(NSNotification * _Nonnull)notification;
+/// Enables the continue button if the <em>username</em>, <em>email</em>, and <em>password</em> fields are all non-empty.
+/// \param target The targeted <em>UITextField</em>.
+///
+- (void)textFieldChanged:(UITextField * _Nonnull)target;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
+- (void)handleSignIn;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-SWIFT_CLASS("_TtC21Retro_Radio_Collector19LoginViewController")
-@interface LoginViewController : UIViewController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS("_TtC21Retro_Radio_Collector18RoundedWhiteButton")
+@interface RoundedWhiteButton : UIButton
+@property (nonatomic, getter=isHighlighted) BOOL highlighted;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)awakeFromNib;
 @end
 
 
 SWIFT_CLASS("_TtC21Retro_Radio_Collector20SignUpViewController")
-@interface SignUpViewController : UIViewController
+@interface SignUpViewController : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified usernameField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified dismissButton;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+@property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
+- (IBAction)handleDismissButton:(id _Nonnull)sender;
+/// Adjusts the center of the <em>continueButton</em> above the keyboard.
+/// \param notification Contains the keyboardFrame info.
+///
+- (void)keyboardWillAppearWithNotification:(NSNotification * _Nonnull)notification;
+/// Enables the continue button if the <em>username</em>, <em>email</em>, and <em>password</em> fields are all non-empty.
+/// \param target The targeted <em>UITextField</em>.
+///
+- (void)textFieldChanged:(UITextField * _Nonnull)target;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
+- (void)handleSignUp;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

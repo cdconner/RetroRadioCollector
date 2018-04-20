@@ -83,6 +83,7 @@
 		A58C6B152083EEBF0056528B /* Retro Radio Collector */ = {
 			isa = PBXGroup;
 			children = (
+				A58C6B1D2083EEC30056528B /* Assets.xcassets */,
 				A58C6B162083EEC00056528B /* AppDelegate.swift */,
 				A58C6B182083EEC00056528B /* ViewController.swift */,
 				A58C6B302083F5FB0056528B /* HomeScreenViewController.swift */,
@@ -92,7 +93,6 @@
 				A58C6B3420841E5D0056528B /* RoundedWhiteButton.swift */,
 				A58C6B2E2083F59C0056528B /* SignUpViewController.swift */,
 				A58C6B1A2083EEC00056528B /* Main.storyboard */,
-				A58C6B1D2083EEC30056528B /* Assets.xcassets */,
 				A58C6B1F2083EEC30056528B /* LaunchScreen.storyboard */,
 				A58C6B222083EEC30056528B /* Info.plist */,
 				A58C6B32208419E10056528B /* GoogleService-Info.plist */,
@@ -204,11 +204,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Retro Radio Collector/Pods-Retro Radio Collector-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
