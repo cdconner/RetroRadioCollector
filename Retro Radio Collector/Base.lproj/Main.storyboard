@@ -243,13 +243,6 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jg1-pQ-E0B">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtB-dm-q15">
-                                        <rect key="frame" x="8" y="8" width="25" height="25"/>
-                                        <state key="normal" image="icons8-Back Filled_32"/>
-                                        <connections>
-                                            <action selector="handleDismissButton:" destination="52y-vx-dZq" eventType="touchUpInside" id="uOV-xT-UCF"/>
-                                        </connections>
-                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T10-xL-OwP">
                                         <rect key="frame" x="20" y="41" width="335" height="242"/>
                                         <subviews>
@@ -324,6 +317,13 @@
                                             <constraint firstItem="akj-5C-67C" firstAttribute="top" secondItem="HNu-Hj-aay" secondAttribute="bottom" constant="31" id="xSG-1E-lHM"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtB-dm-q15">
+                                        <rect key="frame" x="8" y="8" width="25" height="25"/>
+                                        <state key="normal" image="icons8-Back Filled_32"/>
+                                        <connections>
+                                            <action selector="handleDismissButton:" destination="52y-vx-dZq" eventType="touchUpInside" id="uOV-xT-UCF"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="T10-xL-OwP" firstAttribute="top" secondItem="XtB-dm-q15" secondAttribute="bottom" constant="8" symbolic="YES" id="6c4-yH-CZh"/>
