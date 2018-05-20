@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "3413a8bdbf512d0daf85e20c56aa3dc0"
-build_time: [1524538754, 211181000]
+build_time: [1526614967, 774181000]
 inputs:
   "/Users/chrisconner/Desktop/Retro Radio Collector/Retro Radio Collector/View Controllers/SignUpViewController.swift": [1524198676, 0]
   "/Users/chrisconner/Desktop/Retro Radio Collector/Retro Radio Collector/RoundedWhiteButton.swift": [1524195828, 0]
